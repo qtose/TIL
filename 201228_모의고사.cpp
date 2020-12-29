@@ -81,13 +81,13 @@ vector<int> solution(vector<int> answers) {
 			++iCorrect3;
 	}
 
-	//¸ÂÃá ¼ö¿Í ¹øÈ£¸¦ pair·Î º¸°ü
+	//ë§ì¶˜ ìˆ˜ì™€ ë²ˆí˜¸ë¥¼ pairë¡œ ë³´ê´€
 	vector<pair<int, int>> vecSort;
 	vecSort.push_back(make_pair(iCorrect3, 3));
 	vecSort.push_back(make_pair(iCorrect2, 2));
 	vecSort.push_back(make_pair(iCorrect1, 1));
 
-	//¸ÂÃá ¼ö ´ë·Î ³»¸²Â÷¼ø, ¸ÂÃá ¼ö°¡ ¼­·Î °°À¸¸é ¹øÈ£ ¿À¸§Â÷¼ø
+	//ë§ì¶˜ ìˆ˜ ëŒ€ë¡œ ë‚´ë¦¼ì°¨ìˆœ, ë§ì¶˜ ìˆ˜ê°€ ì„œë¡œ ê°™ìœ¼ë©´ ë²ˆí˜¸ ì˜¤ë¦„ì°¨ìˆœ
 	sort(vecSort.begin(), vecSort.end(), [](pair<int, int> Pair1, pair<int, int> Pair2)
 	{
 		if (Pair1.first == Pair2.first)
@@ -97,10 +97,10 @@ vector<int> solution(vector<int> answers) {
 			return Pair1.first > Pair2.first;
 	});
 
-	//°¡Àå ¸¹ÀÌ ¸ÂÃá ¼ö
+	//ê°€ì¥ ë§ì´ ë§ì¶˜ ìˆ˜
 	int iMax = vecSort.front().first;
 	
-	// °¡Àå ¸¹ÀÌ ¸ÂÃá ¼öÀÇ ¹øÈ£¸¦ ¹è¿­¿¡ ´ãÀ½
+	// ê°€ì¥ ë§ì´ ë§ì¶˜ ìˆ˜ì˜ ë²ˆí˜¸ë¥¼ ë°°ì—´ì— ë‹´ìŒ
 	for (auto& Pair : vecSort) {
 		if (iMax == Pair.first)
 			answer.push_back(Pair.second);
