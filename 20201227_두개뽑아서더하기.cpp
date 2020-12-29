@@ -28,7 +28,7 @@ vector<int> solution(vector<int> numbers) {
 
 	sort(answer.begin(), answer.end());
 	
-	//SetÀ» ÅëÇØ Áßº¹À» ÇÇÇÏ´Â ¹æ¹ı
+	//Setì„ í†µí•´ ì¤‘ë³µì„ í”¼í•˜ëŠ” ë°©ë²•
 	//vector<int> answer;
 	//set<int> st;
 	//for (int i = 0;i<numbers.size();++i) {
