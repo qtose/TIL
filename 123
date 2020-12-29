@@ -8,7 +8,7 @@ using namespace std;
 
 int solution(int n, vector<int> lost, vector<int> reserve) {
 
-	//���߿� �ٽ� Ǯ���
+	//³ªÁß¿¡ ´Ù½Ã Ç®¾îº¼°Í
 	//int iLostSize = lost.size();
 	//int iReserveSize = reserve.size();
 	//
