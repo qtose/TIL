@@ -5,18 +5,18 @@ using namespace std;
 
 //https://programmers.co.kr/learn/courses/30/lessons/64061
 
-//¼¼·Î Çà row
-//°¡·Î ¿­ column
+//ì„¸ë¡œ í–‰ row
+//ê°€ë¡œ ì—´ column
 
 
-//board[] : Çà
-//board[][] : ¿ø¼Ò
+//board[] : í–‰
+//board[][] : ì›ì†Œ
 int solution(vector<vector<int>> board, vector<int> moves) {
 	int answer = 0;
 
 	vector<int> vecResult;
 
-	//moves·Î boardÀÇ ¿­À» ¼øÈ¸
+	//movesë¡œ boardì˜ ì—´ì„ ìˆœíšŒ
 	for (auto& Elem : moves) {
 		int iSize = board.size();
 		for (int i = 0; i < iSize; i++) {
