@@ -35,7 +35,7 @@ string solution(vector<string> participant, vector<string> completion) {
 		}
 	}
 
-	//µÎ º¤ÅÍ¸¦ Á¤·Ä ÈÄ ´Ù¸¥ ¿ø¼Ò¸¦ Ã£´Â ¹æ¹ı
+	//ë‘ ë²¡í„°ë¥¼ ì •ë ¬ í›„ ë‹¤ë¥¸ ì›ì†Œë¥¼ ì°¾ëŠ” ë°©ë²•
 	//string answer = "";
 	//sort(participant.begin(), participant.end());
 	//sort(completion.begin(), completion.end());
