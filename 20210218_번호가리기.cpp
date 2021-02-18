@@ -13,7 +13,7 @@ string solution(string phone_number) {
 	{
 		char ch = '*';
 
-		if (i > phone_number.size() - 5)
+		if (i > phone_number.size() - 5 || phone_number.size() <= 4)
 		{
 			ch = phone_number[i];
 		}
